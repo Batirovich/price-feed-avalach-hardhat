@@ -1,0 +1,72 @@
+/* Root Container Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #f9f9f9, #e9ecef);
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Logo Styles */
+.logo {
+  height: 80px;
+  padding: 20px;
+  will-change: transform, filter;
+  transition: transform 300ms ease-in-out, filter 300ms ease-in-out;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #ffffff, #cccccc);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 2em #bebfc9aa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Logo Spin Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Style Enhancements */
+.card {
+  padding: 2em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 200ms ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+}
+
+/* Text and Link Enhancements */
+.read-the-docs {
+  color: #ff4081;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.read-the-docs:hover {
+  color: #d32f2f;
+  text-decoration: underline;
+}
